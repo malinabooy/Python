@@ -1,14 +1,18 @@
 colors = {'red', 'green', 'blue'}
 print(colors)  # {'red', 'green', 'blue'}
+
 colors.add('red')
 print(colors)  # {'red', 'green', 'blue'}
+
 colors.add('gray')
 print(colors)  # {'red', 'green', 'blue','gray'}
+
 colors.remove('red')  # Удаляет
 print(colors)  # {'green', 'blue','gray'}
 
 colors.discard('red')  # Проверяет множество и удаляет если есть
 print(colors)  # {'green', 'blue','gray'}
+
 colors.clear()  # { }
 print(colors)  # set()
 
