@@ -9,9 +9,8 @@ x = int(input('Введите число, которое надо найти: ')
 
 list = [randint(0, 10) for i in range(n)]
 print(list)
-x1 = x - 1
-x2 = x + 1
+
 for i in range(len(list)):
-    while list[i] == x1 or list[i] == x2 or list[i] == x:
+    while list[i] == x - 1 or list[i] == x + 1 or list[i] == x:
         print(list[i], end=' ')
         break

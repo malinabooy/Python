@@ -28,7 +28,7 @@ dict = {1: 'AEIOULNSTR АВЕИНОРСТ',
         8: 'JZ ШЭЮ',
         10: 'QZ ФЩЪ'}
 
-word = input('Введите слово:').upper()  # преобразовал из нижнего в верхний регистр
+word = input('Введите слово:').upper()
 count = 0
 for i in word:
     for v in dict:
