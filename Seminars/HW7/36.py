@@ -8,13 +8,13 @@
 # **Ввод:** `print_operation_table(lambda x, y: x * y) `
 # **Вывод:*
 
-def print_operation_table(operation, num_rows, num_columns):
-    for i in range(1, num_rows):
-        for j in range(1, num_columns):
+def print_operation_table(operation, num_line, num_columns):
+    for i in range(1, num_line + 1):
+        for j in range(1, num_columns + 1):
             print("%4d" % (i * j), end="")
         print()
 
 
-line = int(input("Введите количество строк: "))
-columns = int(input("Введите количество столбцов: "))
+columns = int(input("Введите количество строк: "))
+line = int(input("Введите количество столбцов: "))
 print_operation_table(lambda x, y: x * y, line, columns)
